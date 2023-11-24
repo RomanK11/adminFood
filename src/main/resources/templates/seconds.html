@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Панель администрации</h1>
+        <h2>Вторые блюда</h2>
+
+        <div th:each="second : ${seconds}">
+            <a th:href="'/menu/delete-soap/' + ${soap.id}" th:text="удалить"></a>
+            <p th:text="'1 ' + ${soap.title}"></p>
+            <p th:text="'2 ' + ${soap.description}"></p>
+            <p th:text="'3 ' + ${soap.price}"></p>
+            <p>_______</p>
+        </div>
+
+        <a href="/menu/addSoap">Добавить суп</a>
+        
+    </section>
+</body>
+</html>

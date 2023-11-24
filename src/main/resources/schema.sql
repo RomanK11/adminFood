@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS soaps (
+    id  IDENTITY NOT NULL PRIMARY KEY,
+    title VARCHAR NOT NULL,
+    description VARCHAR,
+    price INTEGER
+);
