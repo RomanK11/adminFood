@@ -11,14 +11,14 @@
         <h2>Вторые блюда</h2>
 
         <div th:each="second : ${seconds}">
-            <a th:href="'/menu/delete-soap/' + ${soap.id}" th:text="удалить"></a>
-            <p th:text="'1 ' + ${soap.title}"></p>
-            <p th:text="'2 ' + ${soap.description}"></p>
-            <p th:text="'3 ' + ${soap.price}"></p>
+            <a th:href="'/menu/delete-second/' + ${second.id}" th:text="удалить"></a>
+            <p th:text="'1 ' + ${second.title}"></p>
+            <p th:text="'2 ' + ${second.description}"></p>
+            <p th:text="'3 ' + ${second.price}"></p>
             <p>_______</p>
         </div>
 
-        <a href="/menu/addSoap">Добавить суп</a>
+        <a href="/menu/addSecond">Добавить второе</a>
         
     </section>
 </body>
