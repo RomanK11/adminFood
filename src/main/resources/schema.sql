@@ -22,3 +22,8 @@ CREATE TABLE IF NOT EXISTS bakers (
     description VARCHAR,
     price INTEGER
 );
+CREATE TABLE IF NOT EXISTS comments (
+    id  IDENTITY NOT NULL PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    text VARCHAR NOT NULL
+);

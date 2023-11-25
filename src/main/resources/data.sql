@@ -10,3 +10,6 @@ VALUES  ('Цезарь', 'Крутой', 38),
 INSERT INTO bakers (title, description, price)
 VALUES  ('Торт', 'сладкий', 120),
         ('Рулет', 'Норм', 140);
+INSERT INTO comments (name, text)
+VALUES  ('Anton', 'Good'),
+        ('Andrey', 'Nice');
